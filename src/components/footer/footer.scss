@@ -1,0 +1,84 @@
+@import '../../app.scss';
+.footerWrapper{
+    background-color: #040e24;
+    padding: 25px 50px 10px 50px;
+
+    .footerItems{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        @include mobile{
+            display: block;
+        }
+        .footerItem{
+            width: 30%;
+            @include mobile{
+                width: 100%;
+            }
+            .footerItemFlex{
+                display: flex;
+                justify-content: space-around;
+                img{
+                    width: 100px;
+                }
+            }
+           .footerItemDesc{
+            color: #ffffffe6;
+            font-size: 14px;
+            text-align: justify;
+            margin-top: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+           }
+           .footerCopyright{
+            color: #ffffffe6;
+            font-size: 14px;
+            text-align: justify;
+            margin-bottom: 20px;
+           }
+        }
+        .footerFollowUs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            h3{
+                font-size: 35px;
+                font-weight: 500;
+                color: white;
+                margin-bottom: 10px;
+            }
+            .iconWrapper{
+                
+                background-color: #F7B100;
+                border-radius: 20px;
+                .footerIconF{
+                    color: white!important;
+                    font-size: 30px!important;
+                    margin: 5px 10px 0px 10px!important;
+                }
+            }
+        }
+        .footerItemEmail, .footerItemContact{
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    @include mobile{
+                        margin-top: 19px;
+                        justify-content: center;
+                    }
+
+                    .footerCotactIcon{
+                        color: #FDC022!important;
+                        margin-right: 5px!important;
+
+                    }
+        }
+        
+    }
+
+}

@@ -1,0 +1,93 @@
+@import '../../app.scss';
+.featuredAbout{
+    margin-top: 105px;
+    .aboutContainer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 60px;
+    height: 536px;
+    width: auto;
+    
+    &.img-contain{
+    background-position: 50%;
+    background-image: none;
+    }
+    .colorGradientAbout{
+        height: 536px;
+        margin: 0!important;
+        padding-left: 12%;
+        padding-right: 12%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .tep{
+            padding: 60px;
+            background-color: #949494cc;
+            width: 60%;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            @include mobile{
+                padding: 10px;
+                width: 100%;
+            }
+            .tepTitle{
+                text-align: center;
+                font-size: 40px;
+                font-weight: 700;
+                color: white;
+            @include mobile{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            margin: 20px 40px 10px 40px;
+            letter-spacing: 1px;
+        }
+
+    }
+        p.gradientDesc{
+            font-size: 24px;
+            text-align: center;
+            font-weight: 500;
+            font-family: sans-serif;
+            margin-top: 10px;
+            line-height: 33px;
+            margin-bottom: 20px;
+            color: white;
+            @include mobile{
+                margin-top: 10px;
+                letter-spacing: 1.5px;
+                font-size: 17px;
+            
+        }
+        }
+        .quote-span{
+            font-size: 15px;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 14px;
+            color: white;
+            font-weight: 500;
+        }
+    }
+
+    .btn-btn-dark{
+        padding: 13px 15px 13px 15px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background: #000000;
+                    color: #fff;
+                    border-radius: 5px;
+                    border: none;
+                    width: 140px;
+                    align-self: center;
+                    cursor: pointer;
+        @include mobile{
+            margin-bottom: 10px;
+        }
+    }
+    }
+}
+          
+}

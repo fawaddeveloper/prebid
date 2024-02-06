@@ -1,0 +1,84 @@
+@import '../../app.scss';
+.workus{
+    padding: 20px;
+    background-color: #FDC022;
+
+    .btn-btn{
+        display: flex;
+        justify-content: center;
+    
+      .workWrapperbtn{
+        padding: 13px 15px 13px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        background: #000000b5;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+}
+}
+}
+.workWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .workWrapperItem{
+        width: 50%;
+        margin: auto;
+        @include mobile{
+            width: 100%;
+        }
+
+        .workWrapperTitle{
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .workWrapperDesc{
+            color: #3c3c3c;
+            
+        }
+    }
+    
+}
+.workWrapperOptions{
+    width: 80%;
+    margin-left: 10%;
+    @include mobile{
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 20px;
+    }
+}
+.workWrapperOption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    @include mobile {
+        padding: 0;
+    }
+    .workWrapperOptionItem{
+        margin-left: 10px;
+        display: flex;
+        margin-top: 20px;
+
+        @include mobile {
+            width: 50%;
+            margin-left: 0;
+        }
+        .workIcon{
+            color: white!important;
+        }
+        .workDesc{
+            color: #3c3c3c;
+        }
+    }
+    
+}

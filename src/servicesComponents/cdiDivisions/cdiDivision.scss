@@ -1,0 +1,26 @@
+@import '../../app.scss';
+.divisionWrapper{
+    .divisionTitle{
+        text-align: center;
+        font-size: 24px;
+    }
+    .division-flex{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px 70px 70px 70px;
+
+        @include mobile{
+            padding: 5px;
+        }
+        .divisionLeft{
+            background-color: #f6f6f6;
+            padding: 15px 15px 25px 25px;
+
+            @include mobile{
+                margin-top: 20px;
+            }
+        }
+    }
+}

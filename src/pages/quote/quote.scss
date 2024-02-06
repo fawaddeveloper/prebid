@@ -1,0 +1,107 @@
+@import '../../app.scss';
+.quoteWrapper{
+    height: calc(100vh - 105px);
+    margin-top: 105px;
+
+
+    .quoteFeaturedImage{
+        background-image: url("../../../home-banner.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        display: flex;
+        justify-content: center;
+        
+        .quote-Form{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 60%;
+            margin: auto;
+            padding: 42px 42px 22px 42px;
+            background: #e6e6e6;
+            margin-top: 27px;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+            @include mobile{
+                width: auto;
+                margin: auto;
+                padding: 40px 4px 22px 3px;
+            }@include tablet{
+                width: auto;
+                margin: auto;
+                padding: 40px 4px 22px 3px;
+            }
+
+            h3{
+                width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #1c1c1c;
+    font-weight: 600;
+            }
+
+            .quoteFlex{
+                width: 40%;
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                padding: 11px 5px 10px 5px;
+                background-color: #f6f2f2;
+                border-radius: 20px;
+                border: 1px solid #b1b1b1;
+
+                @include mobile{
+                    width: 40%;
+                    margin: 10px 3px 10px 3px;
+                }
+                @include tablet{
+                    width: 40%;
+                    margin: 10px 3px 10px 3px;
+                }
+
+        .quoteMail{
+            margin-left: 10px !important;
+        }
+        input{
+            padding: 7px;
+            outline: 0;
+            border: none;
+            margin-left: 5px;
+            background-color: #f6f2f2;
+            width: 100%;
+            border-radius: 10px;
+
+            &:focus{
+                box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+            }
+        }
+            }
+        .quoteFlex-file{
+            text-align: center;
+            width: 100%;
+
+            .uploadFileIcon{
+                font-size: 40px !important;
+                
+            }
+        }
+        h4{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .quote-submit-button{
+            padding: 7px 0px 7px 0px;
+            color: white;
+            background-color: teal;
+            border: none;
+            cursor: pointer;
+            width: 60%;
+        }
+        }
+    }
+}

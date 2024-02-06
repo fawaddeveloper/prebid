@@ -1,0 +1,186 @@
+@import "../../app.scss";
+.topnavbar{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 1111;
+    height: 35px;
+    width: 100vw;
+    background: #6d6d6d;
+    .topNavbarItems{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+        color: #fff;
+        .email{
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .number{
+            margin-right: 22px;
+            font-size: 14px;
+        }
+    }
+}
+.navbar{
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 35px;
+    z-index: 999;
+    background: white;
+  
+
+
+    .container{
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        .left{
+            display: flex;
+            align-items: center;
+            img{
+                // height: 125px;
+                // margin-right: 40px;
+                // margin-top: -11px;
+                height: 66px;
+                margin-right: 40px;
+                margin-top: 0px;
+                width: 75px;
+                // @include mobile{
+                //     display: none;
+                // }
+            }
+           
+        }
+        .right{
+            display: flex;
+            align-items: center;
+
+            .navbarmainLinks{
+                margin-right: 20px;
+                cursor: pointer;
+                color: rgb(119 116 116 / 83%);
+                // @include tablet{
+                //     display: none;
+                // }
+
+                // &.navbarmainLinks{
+                //     @include tablet{
+                //         display: block;
+                //     }
+                // }
+                &.active{
+                    color: black;
+                    // .options{
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     position: absolute;
+                    //     border-radius: 5px;
+                    // }
+                }
+            }
+            
+
+                .rightNavButton{
+                    padding: 13px 15px 13px 15px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background: #000000b5;
+                    color: #fff;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+
+
+.mobile-navbar{
+        width: 100%;
+        color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 35px;
+    z-index: 999;
+    margin-top: -20px;
+    .mobilebar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .mobileLeft{
+                .mobile-img{
+                            // height: 90px;
+                            // margin-top: 3px;
+                            // margin-bottom: -8px;
+
+                            height: 54px;
+                            margin-top: 28px;
+                            margin-left: 10px;
+                        
+            }
+
+        }
+        .mobileRight{
+            .mobileRightIcon{
+                color: black !important;
+                font-size: 40px !important;
+                margin-right: 10px !important;
+                margin-top: 21px!important;
+            }
+                }
+        }
+    }
+.mobileContainer{
+        background-color: teal;
+        margin-top: -10px;
+    
+        ul{
+            background: white;
+            list-style: none;
+            li{
+                background: #eee;
+                padding: 4px;
+                text-align: center;
+                margin-top: 3px;
+                color: black;
+            
+                    a{
+                            text-decoration: none;
+                            color: inherit;
+                        }
+                    }
+                    }
+                }
+                
+                .mobile-navbar{
+                    display: none;
+                }
+                
+                .mobileContainer{
+                    display: none;
+                }
+
+
+@include mobile{
+    .navbar{
+        display: none;
+    }
+    .mobile-navbar{
+        display: block;
+    }
+    .mobileContainer{
+        display: block;
+    }
+}
+
+.block{
+    display: none;
+}

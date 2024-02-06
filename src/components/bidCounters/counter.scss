@@ -1,0 +1,86 @@
+@import '../../app.scss';
+.counterContainer{
+    margin-top: 50px;
+
+    .counterItem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        @include mobile{
+            display: block;
+        }
+        .counterItemsLeft{
+            display: flex;
+            margin-right: 100px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @include mobile{
+                margin-right: 0;
+            }
+            .counterItemLeft{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid #8080808c;
+                padding: 15px;
+                margin: 0px 20px 12px 0px;
+                @include mobile{
+                    margin: 0px;
+                }
+                .counterIcon{
+                    margin-bottom: 15px;
+                    img{
+                        width: 150px;
+                        object-fit: cover;
+                    }
+                }
+                .counterTitle{
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: rgb(101 87 87);
+                }
+                .counterCount{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .counterItemsRight{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .counterItemRight{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid #8080808c;
+                padding: 15px;
+                margin: 0px 20px 12px 0px;
+                @include mobile{
+                    margin: 20px 0px 0px 0;
+                }
+                .counterIcon{
+                    margin-bottom: 15px;
+                    img{
+                        width: 150px;
+                        object-fit: cover;
+                    }
+                }
+                .counterTitle{
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: rgb(101 87 87);
+                }
+                .counterCount{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

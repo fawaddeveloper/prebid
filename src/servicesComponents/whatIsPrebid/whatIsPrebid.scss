@@ -1,0 +1,98 @@
+@import '../../app.scss';
+.whatIsPrebid{
+    margin-bottom: 50px;
+    margin-top: -5%;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .col-lg-12{
+            
+            h3{
+                margin: 50px 20px 40px 10px;
+                font-size: 30px;
+                @include mobile{
+                    margin: 50px 20px 5px 10px;
+                }@include tablet{
+                    margin: 50px 20px 5px 10px;
+                }
+            }
+            p{
+                margin-bottom: 10px;
+                font-size: 15px;
+                letter-spacing: .5px;
+                text-align: justify;
+                color: #101010ed;
+
+            }
+            
+            .row{
+                .col-md-6{
+                    width: 40%;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    .whatIsPrebidDescT{
+                        font-size: 12px;
+                        color: gray;
+                        margin-top: 15px;
+                        
+                    }
+
+                    @include mobile{
+                        width: 80%;
+                    }@include tablet{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+.dfAlign{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    .dfAlignIcon{
+        font-size: 38px!important;
+        color: #FFBC10!important;
+        margin-right: 10px!important;
+    }
+    .whatIsPrebidTitle{
+        font-size: 17px;
+        font-weight: 500;
+    }
+   
+}
+.p-3{
+    padding: 0px 30px 0px 30px;;
+}
+.mr-2{
+    margin-right: 20px;
+    @include mobile{
+        margin-right: 0px;
+    }@include tablet{
+        margin-right: 0px;
+    }
+}
+.w-3{
+    width: 27%;
+    @include mobile{
+        width: 80%;
+    }@include tablet{
+        width: 80%;
+    }
+}
+.w-4{
+    width: 41%;
+    @include mobile{
+        width: 100%;
+    }@include tablet{
+        width: 100%;
+    }
+}
+.bg-y{
+    background-color: #FFBC10 ;
+}
+.bg-white{
+    background-color: white;
+}

@@ -1,0 +1,71 @@
+@import '../../app.scss';
+.topTitle{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #112d6b;
+
+}
+.accordianWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .accordion{
+        width: 800px;
+
+        .item{
+            background-color: #f6f6f6;
+            margin-bottom: 5px;
+            padding: 10px 20px;
+            .title{
+                color: #463c3c;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+            }
+            .content{
+                color: rgb(45, 44, 44);
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.5s cubic-bezier(0,1,0,1);
+                &.show{
+                    height: auto;
+                    margin-top: 3px;
+                    font-size: 14px;
+                    max-height: 9999px;
+                    transition: all 0.5s cubic-bezier(1,0,1,0);
+                }
+            }
+        }
+    }
+}
+
+.wrapperTermsConditions{
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px 30px 20px;
+
+    .wrapperTermsConditionsTitle{
+        font-size: 30px;
+        color: #112d6b;
+        margin-bottom: 20px;
+    }
+    .wrapperTermsConditionsDesc{
+        margin-top: 13px;
+        font-size: 15px;
+        font-weight: 400;
+        width: 70%;
+        margin: auto;
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
