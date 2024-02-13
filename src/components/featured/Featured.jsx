@@ -9,7 +9,9 @@ export default function Featured({src}) {
     return (
         <div className="featuredAbout">
        <div className="aboutContainer img-contain" 
-       style={{backgroundImage: `url("${src}")`}}>
+       style={{backgroundImage: `url("${src}")`}}
+       fetchpriority="high"
+       >
             <div className="colorGradientAbout" style={{backgroundImage: "none"}}>
                 <div className="tep">
             <span className='tepTitle'>Prebid Estimation House</span>

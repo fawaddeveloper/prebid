@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 export default function Quote() {
 
     const fileInputRef = useRef(null);
@@ -14,6 +15,11 @@ export default function Quote() {
   
     return (
         <>
+                <Helmet>
+                <title>Quote-Prebid Estimation House</title>
+                <meta name="description" content="Request a free construction estimation quote from Prebid Estimation House. Submit your plans for accurate cost assessments. Contact us now!"/>
+                <link rel="canonical" href="https://prebidestimationhouse.com/quote" />
+            </Helmet>
         <div className="quote">
             <Navbar/>
             <div className="quoteWrapper">

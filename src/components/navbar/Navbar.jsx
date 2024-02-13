@@ -60,16 +60,16 @@ import CloseIcon from '@mui/icons-material/Close';
                         Solutions
                 </span>
                     </Link>
-                    <Link to="/Career" className='link'>
+                    <Link to="/career" className='link'>
                     <span className='navbarmainLinks'>Career</span>
                     </Link>
-                    <Link to="/Contact" className='link'>
+                    <Link to="/contact" className='link'>
                     <span className='navbarmainLinks'>Contact Us</span>
                     </Link>
-                    <Link to="/Policy" className='link'>
+                    <Link to="/policy" className='link'>
                     <span className='navbarmainLinks'>Terms & Conditions</span>
                     </Link>
-                    <Link to="/Quote" className='link'>
+                    <Link to="/quote" className='link'>
                     <button className='rightNavButton'>Get Free Quote</button>
                     </Link>
                 </div>

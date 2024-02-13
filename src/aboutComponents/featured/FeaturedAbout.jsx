@@ -33,7 +33,7 @@ export default function FeaturedAbout({src}) {
               under one roof.
             </p>
         </div>
-        <img src="../../../house.png" alt="" />
+        <img src="../../../house.jpg" alt="" />
         </div>
         </div>
         </>

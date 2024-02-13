@@ -20,13 +20,13 @@ function App() {
       <Route exact path='/' element={<Home />}></Route>
       <Route exact path='/about' element={<About />}></Route>
       <Route exact path='/services' element={<Services />}></Route>
-      <Route exact path='/Contact' element={<Contact />}></Route>
-      <Route exact path='/Career' element={<Career />}></Route>
+      <Route exact path='/contact' element={<Contact />}></Route>
+      <Route exact path='/career' element={<Career />}></Route>
       <Route exact path='/Rough' element={<Rough />}></Route>
-      <Route exact path='/Quote' element={<Quote />}></Route>
+      <Route exact path='/quote' element={<Quote />}></Route>
       <Route exact path='/Test' element={<Test />}></Route>
       <Route exact path='/NodeMailer' element={<NodeMailer />}></Route>
-      <Route exact path='/Policy' element={<PrivacyPolicy />}></Route>
+      <Route exact path='/policy' element={<PrivacyPolicy />}></Route>
       </Routes>
       </Main>
       </div>

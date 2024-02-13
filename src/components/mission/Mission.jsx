@@ -8,7 +8,7 @@ export default function Mission() {
                     <div className="item">
                         <div className="itemMission">
                            
-                            <img src="https://firebasestorage.googleapis.com/v0/b/netflix-873af.appspot.com/o/products%2FUntitled%20design.png?alt=media&token=7e90f3f1-70a7-45bb-88f3-a34128c00472" alt="" />
+                            <img src="../../../mission.png" alt="" />
                             
                             <div className="itemMissionTitle">Our Mission</div>
                             <div className="itemMissionDesc">
@@ -17,7 +17,7 @@ export default function Mission() {
                         </div>
                         <div className="itemVision">
                             
-                            <img src="https://firebasestorage.googleapis.com/v0/b/netflix-873af.appspot.com/o/products%2FUntitled%20design%20(1).png?alt=media&token=43b2fe6a-4a8d-4a64-95c1-7f15fba9d056" alt="" />
+                            <img src="../../../vision.png" alt="" />
                             
                             <div className="itemVisionTitle">Our Vision </div>
                             <div className="itemVisionDesc">

@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <>
@@ -30,9 +31,16 @@ function Footer() {
                     <div className="footerFollowUs">
                         <h3>Follow Us</h3>
                         <div className="iconWrapper">
+
+                        <Link target='_blank' to="https://www.facebook.com/profile.php?id=61556315221961ew" className='Link'>
                             <FacebookIcon className='footerIconF'/>
+                            </Link>
+                            <Link target='_blank' to="https://www.instagram.com/prebidestimationhouse/" className='Link'>
                             <InstagramIcon className='footerIconF'/>
+                            </Link>
+                            <Link target='_blank' to="www.linkedin.com/in/prebid-estimation-house-42b26b2b4" className='Link'>
                             <LinkedInIcon className='footerIconF'/>
+                            </Link>
                         </div>
                     </div>
                     <div className="footerItemEmail">

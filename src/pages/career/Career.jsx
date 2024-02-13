@@ -10,7 +10,7 @@ function Career() {
         <>
         <Navbar/>
         <ServicesBanner
-        src="../../../career-banner.png" title="Work with PEH Solutions"
+        src="../../../career-banner.jpg" title="Work with PEH Solutions"
         font="40px"
         />
         <CareerCom/>

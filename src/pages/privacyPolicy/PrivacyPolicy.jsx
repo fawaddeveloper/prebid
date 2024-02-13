@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import FeaturedAbout from '../../aboutComponents/featured/FeaturedAbout'
 import Accordian from '../../components/accordian/Accordian'
 import Featured from '../../components/featured/Featured'
@@ -9,8 +10,13 @@ import './privacyPolicy.scss'
 function PrivacyPolicy() {
     return (
         <>
+         <Helmet>
+                <title>Terms & Conditions-Prebid Estimation House</title>
+                <meta name="description" content="Explore FAQs about construction estimating services at Prebid Estimation House. Learn about pricing, processes, and more. Get answers now!"/>
+                <link rel="canonical" href="https://prebidestimationhouse.com/policy" />
+            </Helmet>
             <Navbar/>
-            <ServicesBanner src="../../../service-banner.png" 
+            <ServicesBanner src="../../../service-banner.jpg" 
         title="Terms & Conditions"
         />
             <TermsCondition/>

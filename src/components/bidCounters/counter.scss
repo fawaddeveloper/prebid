@@ -29,13 +29,7 @@
                 @include mobile{
                     margin: 0px;
                 }
-                .counterIcon{
-                    margin-bottom: 15px;
-                    img{
-                        width: 150px;
-                        object-fit: cover;
-                    }
-                }
+                
                 .counterTitle{
                     margin-bottom: 15px;
                     font-size: 15px;
@@ -63,13 +57,7 @@
                 @include mobile{
                     margin: 20px 0px 0px 0;
                 }
-                .counterIcon{
-                    margin-bottom: 15px;
-                    img{
-                        width: 150px;
-                        object-fit: cover;
-                    }
-                }
+
                 .counterTitle{
                     margin-bottom: 15px;
                     font-size: 15px;
@@ -82,5 +70,14 @@
                 }
             }
         }
+    }
+}
+
+
+.counterIcon{
+    margin-bottom: 5px;
+    .counterIcon{
+        font-size: 50px !important;
+        color: #FFCD4B !important;
     }
 }
